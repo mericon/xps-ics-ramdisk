@@ -25,6 +25,8 @@ if [ ! -f /system/autorooted ]; then
 	echo "[Superuser app] fixing su perms and owners ..." >> /data/local/tmp/autorootlog.txt
 	chown root.root /system/app/Superuser.apk
 	chmod 0644 /system/app/Superuser.apk
+	
+
 fi
 
 # [CHECK] verify /system/xbin

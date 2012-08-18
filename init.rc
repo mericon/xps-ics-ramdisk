@@ -339,6 +339,9 @@ on property:persist.sys.usb.config=*
 #DooMLoRD: init.d scripts support 
     start sysinitsupport
 
+#Mericon: Tweakes
+    start tweak
+
 ## Daemon processes to be run by init.
 ##
 # DooMLoRD: relink busybox service
@@ -349,6 +352,12 @@ service relinkbusybox /sbin/relinkbusybox.sh
 
 # DooMLoRD: autoroot service
 service autoroot /sbin/autoroot.sh
+    user root
+    oneshot
+    disabled
+
+# Mericon: Tweaks service
+service tweak /sbin/tweak.sh
     user root
     oneshot
     disabled

@@ -17,6 +17,6 @@ echo "[*] correcting permissions of files in init.d directory" >> /data/local/tm
 # make init.d directory
 echo "[*] make init.d directory" >> /data/local/tmp/sysinitsupportlog.txt
 /system/bin/logwrapper /sbin/busybox run-parts /system/etc/init.d
-
+	
 # [DONE] all done exiting
 echo "[DONE] all done exiting" >> /data/local/tmp/sysinitsupportlog.txt
